@@ -1,0 +1,13 @@
+/home/g02datatalks/spark/jdk-11.0.2
+home/g02datatalks/spark/spark-3.0.3-bin-hadoop3.2
+
+wget https://storage.googleapis.com/hadoop-lib/gcs/gcs-connector-hadoop3-2.2.5.jar
+
+ls -l gcs-connector-hadoop3-2.2.5.jar
+
+cp /path/to/your/gcs-connector-hadoop3-2.2.5.jar $SPARK_HOME/jars/
+
+cp ./gcs-connector-hadoop3-2.2.5.jar $SPARK_HOME/jars/
+
+
+gsutil cp ~/retail-sales/4_spark_streaming/stream_data.py gs://files-folder-001/

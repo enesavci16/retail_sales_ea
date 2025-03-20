@@ -1,0 +1,11 @@
+open git bash
+
+source load_env.sh
+echo $GOOGLE_CREDENTIALS_PATH # check it 
+
+
+
+terraform init
+terraform plan
+terrafom apply
+

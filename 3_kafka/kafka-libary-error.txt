@@ -1,0 +1,13 @@
+g02datatalks@kafka-instance:~/retail_sales_ea/3_kafka$ python3 generate_dataset_to_kafka.py 
+Traceback (most recent call last):
+  File "generate_dataset_to_kafka.py", line 4, in <module>
+    from kafka import KafkaProducer
+ModuleNotFoundError: No module named 'kafka'
+g02datatalks@kafka-instance:~/retail_sales_ea/3_kafka$ pip3 install kafka-python
+Collecting kafka-python
+  Using cached kafka_python-2.1.1-py2.py3-none-any.whl (274 kB)
+Installing collected packages: kafka-python
+Successfully installed kafka-python-2.1.1
+g02datatalks@kafka-instance:~/retail_sales_ea/3_kafka$ python3 generate_dataset_to_kafka.py
+{'invoice_no': 'I138884', 'customer_id': 'C241288', 'gender': 'Female', 'age': 28, 'category': 'Clothing', 'quantity': '5', 'price': 1500.4, 'payment_method': 'Credit Card', 'invoice_date': datetime.datetime(2022, 8, 5, 0, 0), 'shopping_mall': 'Kanyon'}
+{'invoice_no': 'I317333', 'customer_id': 'C111565', 'gender': 'Male', 'age': 21, 'category': 'Shoes', 'quantity': '3', 'price': 1800.51, 'payment_method': 'Debit Card', 'invoice_date': datetime.datetime(2021, 12, 12
