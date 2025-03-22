@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: staging
+    database: "de-ea-retail-sales"
+    schema: stg
+    tables:
+      - name: customer_shopping_data
